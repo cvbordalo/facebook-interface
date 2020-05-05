@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import PostItem from './PostItem';
+
 class PostList extends Component {
   state = {
     posts: [
@@ -15,7 +17,7 @@ class PostList extends Component {
           {
             id: 2,
             author: {
-              name: "Gandalf the Gray",
+              name: "Gandalf The Gray",
               avatar: "https://s.yimg.com/ny/api/res/1.2/sQyOyb2j2ZlxyMG6HSDAbA--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/b7bf9fcc3fc10ff7785a429ca69e5113"
             },
             content: "Cras ultricies diam id venenatis mollis. Proin laoreet turpis et justo dictum, ac convallis sem ornare. Suspendisse erat lorem, luctus ut pretium ac, posuere id dolor. Phasellus massa elit, porta eu iaculis sit amet, placerat a elit. Mauris vel est erat."
@@ -78,12 +80,18 @@ class PostList extends Component {
       }
     ]
   };
-}  //apagar dps
-  /*render() {
-    return (
 
+  render() {
+    const { posts } = this.state;
+
+    return (
+      <div className="postlist">
+        {posts.map(post => (
+          <PostItem key={post.id} {...post} />
+        ))}
+      </div>
     )
   }
 }
 
-export default PostList; */
+export default PostList;
