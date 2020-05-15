@@ -28,7 +28,7 @@ class PostList extends Component {
         id: 3,
         author: {
           name: "Han Solo",
-          avatar: "https://imgsapp2.uai.com.br/app/noticia_133890394703/2013/12/04/149175/20131204201544204913e.jpg"
+          avatar: "https://vignette.wikia.nocookie.net/pt.starwars/images/0/01/Hansoloprofile.jpg/revision/latest/top-crop/width/360/height/450?cb=20120222133702"
         },
         date: "April 07 2020",
         content: "Aenean vestibulum est quis enim faucibus cursus. Nullam nec mauris sodales, sagittis metus ac, bibendum neque.",
